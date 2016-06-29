@@ -1,0 +1,57 @@
+﻿@model BusinessCardCore.Models.BusinessCard
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    
+    <div class="form-horizontal">
+            <h4>Business Card</h4>
+            <hr />
+            <form method="post" action="~/Card/CreateOrEdit">
+                <input type="hidden" id="id" value="@Model.ID" name="id">
+                <table style="margin: 2% 0 2% 0">
+                    <tr>
+                        <td><label>Name: </label></td>
+                        <td><input type="text" id="name" value="@Model.Name" name="name" required maxlength="100"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email: </label></td>
+                        <td><input type="email" id="email" value="@Model.Email" name="email" required maxlength="100"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Phone: </label></td>
+                        <td><input type="text" id="mobilephone" value="@Model.MobilePhone" name="mobilephone" required maxlength="10"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Company: </label></td>
+                        <td><input type="text" id="compayname" value="@Model.CompanyName" name="companyname" required maxlength="50"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Title position: </label></td>
+                        <td><input type="text" id="titleposition" value="@Model.TitlePosition" name="titleposition" required maxlength="100"></td>
+                    </tr>
+                </table>
+
+                <input type="submit" value="Submit" />
+            </form>
+            <dl class="dl-horizontal"></dl>
+
+        </div>
+    
+    
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</body>
+</html>
