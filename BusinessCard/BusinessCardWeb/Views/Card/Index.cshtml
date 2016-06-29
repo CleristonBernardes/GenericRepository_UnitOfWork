@@ -1,0 +1,51 @@
+﻿@model BusinessCardCore.Models.BusinessCard
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body style="margin: 5%">
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    
+    
+    <h4>Business Card</h4>
+    <hr />
+    <form method="post" action="~/Card/Create">
+        <input type="hidden" id="id" value="" name="id" >
+        <table style="margin: 2% 0 2% 0">
+            <tr>
+                <td><label>Name: </label></td>
+                <td><input type="text" id="name" value="" name="name" required maxlength="100"></td>
+            </tr>
+            <tr>
+                <td><label>Email: </label></td>
+                <td><input type="email" id="email" value="" name="email" required maxlength="100"></td>
+            </tr>
+            <tr>
+                <td><label>Phone: </label></td>
+                <td><input type="text" id="mobilephone" value="" name="mobilephone" required maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label>Company: </label></td>
+                <td><input type="text" id="compayname" value="" name="companyname" required maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label>Title position: </label></td>
+                <td><input type="text" id="titleposition" value="" name="titleposition" required maxlength="100"></td>
+            </tr>
+        </table>
+        
+        <input type="submit" value="Submit" />
+    </form>
+    <dl class="dl-horizontal"></dl>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+D:\Desenvolvimento\Intersective\BusinessCard\BusinessCardCore\bin\Debug\BusinessCardCore.dll
+D:\Desenvolvimento\Intersective\BusinessCard\BusinessCardCore\bin\Debug\BusinessCardCore.pdb
+D:\Desenvolvimento\Intersective\BusinessCard\BusinessCardCore\obj\Debug\BusinessCardCore.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento\Intersective\BusinessCard\BusinessCardCore\obj\Debug\BusinessCardCore.dll
+D:\Desenvolvimento\Intersective\BusinessCard\BusinessCardCore\obj\Debug\BusinessCardCore.pdb

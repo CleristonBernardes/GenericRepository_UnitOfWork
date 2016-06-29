@@ -1,0 +1,10 @@
+- Have to create a appplication through LinkedIn developer website.
+- Got the client ID.
+- Found this amazing link http://www.oauthforaspnet.com/providers/linkedin/
+- Create the project again and set the Authentication to "Individual User Accounts".
+- F12 to find out which URI is called.
+- Problem.. call the logoff function to linked in... will fix later
+- Created a faceboook app to make authentication.
+- Problem.. facebook doesn't accept localhost domain... lets go to azure.
+- It wasn't a problem I needed to add a Plataform
+- The log off problem is because there is an authentication in another tab in the same browser. NOT A PROBLEM.
